@@ -1,0 +1,1 @@
+console.log('circle-block load-test '+'/n');

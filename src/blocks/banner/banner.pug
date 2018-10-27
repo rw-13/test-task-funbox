@@ -1,0 +1,27 @@
+mixin banner(props)
+
+	-
+		if(typeof(props) === 'undefined') {
+			var props = {}
+		}
+		var modId = (props.mods) ? props.mods : ''
+		var mods = (modId !== '') ? ('banner_'+modId) : ''
+
+	.banner(class!=mods data-target=props.attr)
+		if(typeof(props.category) !== 'undefined' && props.category)
+			.banner__top
+				.banner__category!=props.category
+			.banner__content
+				if(typeof(props.title) !== 'undefined' && props.title)
+					.banner__title
+						h2!=props.title
+							span!=props.subtitle
+				.banner__bonus
+					p
+						b!=props.bonus1
+						span порций
+					p
+						b!=props.bonus2
+						span мышь в подарок
+
+				+circle(props.count)

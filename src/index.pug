@@ -1,0 +1,53 @@
+include pug/template.pug
+
+	block page
+		.index
+			.container
+				h1 Ты сегодня покормил кота?
+				.index__list
+					.index__item
+						+banner({
+							"category":"Сказочное заморское яство",
+							"title":"Нямушка",
+							"subtitle":"с фуа-гра",
+							"bonus1":"10 ",
+							"bonus2":"",
+							"bonus3":"",
+							"count":"0,5",
+							"attr":"Печень гуся в соусе",
+							"mods":""
+						})
+						.index__banner-order
+							span Чего сидишь? Порадуй котэ, 
+							a(href="") купи
+						.index__banner-desc
+					.index__item
+						+banner({
+							"category":"Сказочное заморское яство",
+							"title":"Нямушка",
+							"subtitle":"с рыбой",
+							"bonus1":"40 ",
+							"bonus2":"2 ",
+							"bonus3":"",
+							"count":"2",
+							"attr":"Головы щучьи с чесноком да свежайшая сёмгушка.",
+							"mods":""
+						})
+						.index__banner-order
+							span Чего сидишь? Порадуй котэ, 
+							a(href="") купи
+						.index__banner-desc
+					.index__item.index__item_disable
+						+banner({
+							"category":"Сказочное заморское яство",
+							"title":"Нямушка",
+							"subtitle":"с курой",
+							"bonus1":"100 ",
+							"bonus2":"5 ",
+							"bonus3":"заказчик доволен",
+							"count":"5",
+							"attr":"",
+							"mods":"disable"
+						})
+						.index__banner-order
+							span Печалька, с курой закончился.

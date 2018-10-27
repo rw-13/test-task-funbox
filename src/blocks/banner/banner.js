@@ -1,0 +1,1 @@
+console.log('banner-block load-test '+'/n')

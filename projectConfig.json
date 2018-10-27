@@ -1,0 +1,18 @@
+{
+	"blocks": {
+		"banner":[],
+		"banner":[],
+		"container":[],
+		"circle":[],
+		"page":[]
+	},
+	"styles": [
+		"src/utilites/default.styl",
+		"src/blocks/**/*.styl",
+		"src/scss/*.styl"
+	],
+	"scripts": [
+		"src/blocks/**/*.js",
+		"src/js/*.js"
+	]
+}
